@@ -13,11 +13,11 @@ def hello_world():
         Ninguno
 
         Returns:
-        Plantilla index.html
+        Plantilla login.html
 
     """
 
-    return render_template('index.html')
+    return render_template('login.html')
 
 @main.route('/login/', methods=['GET', 'POST'])
 def login():
