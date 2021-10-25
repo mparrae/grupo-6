@@ -15,7 +15,7 @@ def create_app():
     """
     app = Flask(__name__)
 
-    app.secret_key = 'misiontic2022'#os.urandom( 24 )
+    app.secret_key = 'grupo6'#os.urandom( 24 )
 
     from views import main
     from api import api

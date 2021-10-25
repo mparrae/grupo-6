@@ -6,7 +6,7 @@ from db import get_db
 main= blueprints.Blueprint('main', __name__)
 
 @main.route( '/' )
-def hello_world():
+def vistas():
     """Función que maneja la raiz del sitio web.
 
         Parameters:
@@ -87,16 +87,38 @@ def registro():
 
 @main.route('/ajax/')
 def ajax():
-    """Función que maneja la ruta ajax.
-
-        Parameters:
-        Ninguno
-
-        Returns:
-        ajax.html 
-
-    """
+   
     return render_template('ajax.html')
+
+@main.route('/busqueda/')
+def busqueda():
+    
+    return render_template('busqueda.html')
+
+@main.route('/Cartelera/')
+def Cartelera():
+   
+    return render_template('Cartelera.html')
+
+
+@main.route('/comida/')
+def comida():
+   
+    return render_template('comida.html')
+
+
+@main.route('/mis visitas/')
+def misvistas():
+   
+    return render_template('mis visitas.html')
+
+
+@main.route('/pelicula/')
+def pelicula():
+    
+    return render_template('pelicula.html')
+
+
 
 
 
